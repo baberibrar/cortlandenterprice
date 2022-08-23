@@ -5,7 +5,7 @@ from .models import Category
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ('id', 'name', 'description', 'created_at', 'updated_at')
+        fields = ('id', 'name', 'description')
 
     def create(self, validated_data):
         # if name already exists, then return error message
