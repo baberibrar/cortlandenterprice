@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'category',
     'product',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -155,3 +156,5 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+AUTH_USER_MODEL = 'user.User'
